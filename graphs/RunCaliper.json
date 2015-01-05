@@ -43,7 +43,7 @@
             "metadata": {}
         },
         {
-            "data": "{\"src\": \"http://i.imgur.com/cqCtdyP.jpg\"}a",
+            "data": "{\"id\": \"thumb\", \"type\": \"image\", \"src\": \"http://i.imgur.com/cqCtdyP.jpg\"}",
             "tgt": {
                 "process": "caliper/MeasureImage_5a204",
                 "port": "in"

@@ -1,14 +1,14 @@
 {
-  "name": "noflo-browser-app",
-  "description": "The best project ever.",
+  "name": "inspector",
+  "description": "Content inspector.",
   "version": "0.1.0",
   "author": {
-    "name": "Jon Nordby",
-    "email": "jononor@gmail.com"
+    "name": "Vilson Vieira",
+    "email": "vilson@void.cc"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/noflo/noflo-browser-app.git"
+    "url": "git://github.com/automata/inspector.git"
   },
   "licenses": [
     {
@@ -20,7 +20,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "noflo": "~0.5.0"
+    "noflo": "~0.5.0",
+    "caliper": "the-grid/caliper"
   },
   "devDependencies": {
     "chai": "~1.9.0",

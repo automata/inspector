@@ -1,8 +1,8 @@
 {
-  "name": "noflo-browser-app",
-  "description": "The best project ever.",
-  "author": "Jon Nordby <jononor@gmail.com>",
-  "repo": "noflo/noflo-browser-app",
+  "name": "inspector",
+  "description": "Content inspector.",
+  "author": "Vilson Vieira <vilson@void.cc>",
+  "repo": "automata/inspector",
   "version": "0.1.0",
   "keywords": [],
   "dependencies": {

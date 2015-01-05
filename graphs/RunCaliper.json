@@ -28,6 +28,36 @@
                 "width": 72,
                 "height": 72
             }
+        },
+        "objects/CreateObject_ro21r": {
+            "component": "objects/CreateObject",
+            "metadata": {
+                "label": "objects/CreateObject",
+                "x": 72,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "objects/SetPropertyValue_g0z79": {
+            "component": "objects/SetPropertyValue",
+            "metadata": {
+                "label": "objects/SetPropertyValue",
+                "x": 216,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Kick_78xci": {
+            "component": "core/Kick",
+            "metadata": {
+                "label": "core/Kick",
+                "x": -72,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
         }
     },
     "connections": [
@@ -43,10 +73,57 @@
             "metadata": {}
         },
         {
-            "data": "{\"id\": \"thumb\", \"type\": \"image\", \"src\": \"http://i.imgur.com/cqCtdyP.jpg\"}",
+            "src": {
+                "process": "objects/CreateObject_ro21r",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "objects/SetPropertyValue_g0z79",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "objects/SetPropertyValue_g0z79",
+                "port": "out"
+            },
             "tgt": {
                 "process": "caliper/MeasureImage_5a204",
                 "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "core/Kick_78xci",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "objects/CreateObject_ro21r",
+                "port": "start"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "src",
+            "tgt": {
+                "process": "objects/SetPropertyValue_g0z79",
+                "port": "property"
+            }
+        },
+        {
+            "data": "http://i.imgur.com/cqCtdyP.jpg",
+            "tgt": {
+                "process": "objects/SetPropertyValue_g0z79",
+                "port": "value"
+            }
+        },
+        {
+            "data": true,
+            "tgt": {
+                "process": "objects/SetPropertyValue_g0z79",
+                "port": "keep"
             }
         }
     ]
